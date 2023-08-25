@@ -1,0 +1,16 @@
+* branch_1:
+x16 > x4
+x26 > x12 (unsigned?)
+x11 < x3 (unsigned?)
+x6 < x8
+x7 = x22
+x20 = x21
+
+* load:
+x2, x20, x28, x16, x12 in range 460:500
+initialize values from 460:500
+
+* store:
+x24, x20, x10, x12, x25 in range 460:500
+ 
+* addresses for loads and stores have to be multiples of 4

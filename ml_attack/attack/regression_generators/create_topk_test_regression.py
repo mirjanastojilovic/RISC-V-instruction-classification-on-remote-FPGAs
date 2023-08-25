@@ -1,0 +1,56 @@
+# Instruction-Level Power Side-Channel Leakage Evaluation of Soft-Core CPUs on Shared FPGAs
+# Copyright 2023, School of Computer and Communication Sciences, EPFL.
+#
+# All rights reserved. Use of this source code is governed by a
+# BSD-style license that can be found in the LICENSE.md file.
+
+import os
+import pandas as pd
+
+sensor_tag="all"
+seeds = [0]
+sensors = "0 1 2 3 4"
+preprocessings = ["none"]#, "CWT-H", "CWT-V"]
+models = ["LSTM", "CNN", "CNN_small", "LSTM+CNN", "CNN+LSTM", "MLP", "resnet"]
+datasets = ["IN/nops", "OUT1/nops", "OUT1/random", "OUT2/nops"]
+i = 10000
+DATA_SOURCE = "nfs"
+board="sakura"
+topks=[2, 3, 4, 5, 6]
+
+if(DATA_SOURCE == "s3"):
+    root_path = "instruction-identification-data/"
+    mount_path = ""
+elif(DATA_SOURCE == "pvc"):
+    root_path = "/tmp/drive/data/"
+    mount_path = "--pvc runai-group-scratch:/tmp/drive"
+elif(DATA_SOURCE == "nfs"):
+    root_path = "/tmp/drive/data/"
+    mount_path = "--pvc runai-group-user-group:/tmp/drive"
+else:
+    print("Incorrect data source")
+    exit()
+
+f = open("regression_test_topk.sh", "w")
+f.write("#!/bin/bash\n")
+
+for seed in seeds:
+    for preprocessing in preprocessings:
+        for model in models:
+            for dataset in datasets:
+                for topk in topks:
+
+                    model_small=model.replace("_", "-").replace("+", "-").replace("/", "-").lower()
+                    dataset_small=dataset.replace("_", "-").replace("+", "-").replace("/", "-").lower()
+                    preprocessing_small=preprocessing.replace("_", "-").replace("+", "-").replace("/", "-").lower()
+
+                    #job_name = "prs-"+dataset_small+"-"+model_small+"-p"+preprocessing_small+"-10000"+"-s"+str(seed)+"-sens-all"
+                    job_name = "prs-"+dataset_small+"-"+model_small+"-p"+preprocessing_small+"-s"+str(seed)
+                    out_path = root_path+"sakura/Exp-"+dataset+"/results/"+model+"_p"+preprocessing+"_"+str(i)+"_s"+str(seed)+"-sensors-"+sensor_tag+"_10fold"
+
+                    f.write("# "+job_name+"\n")
+                    f.write("python3 test_topk.py -i "+root_path+"/sakura/Exp-"+dataset+"/dataset/dataset_avg_100.csv -b "+board+" -seed "+str(seed)+" -ss "+str(i)+" -nse 5 -sid "+sensors+" -nsa 60 -m "+model+" -n 0 -pp "+preprocessing+" -bs 64 -topk "+str(topk)+" -kf 10 -o "+out_path+"/out/\n")
+
+                    f.write(" \n")
+
+f.close()

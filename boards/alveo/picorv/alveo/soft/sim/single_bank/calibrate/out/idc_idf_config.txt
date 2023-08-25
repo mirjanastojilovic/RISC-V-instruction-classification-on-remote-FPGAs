@@ -1,0 +1,5 @@
+Number of sensors: 30
+Sensor OD   width: 16
+Sensor IDC  width: 32
+Sensor IDF  width: 96
+Calibration file path: ./idc_idf.bin

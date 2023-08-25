@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="xilinx_u200_gen3x16_xdma_1_202110_1-0-picorv_sca.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_AxiFlusher_sv " />
+            <top_module name="\$unit_axi_full_register_slice_stub_sv " />
+            <top_module name="\$unit_bd_d216_interconnect_M00_AXI_MEM00_0_stub_sv " />
+            <top_module name="\$unit_pfm_dynamic_profile_vip_0_0_stub_sv " />
+            <top_module name="\$unit_pfm_dynamic_smartconn_data_0_0_stub_sv " />
+            <top_module name="\$unit_pfm_top_embedded_schedular_0_stub_sv " />
+            <top_module name="\$unit_pfm_top_sim_ddr_0_0_stub_sv " />
+            <top_module name="design_package" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="pfm_top_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="86.692688 us"></ZoomStartTime>
+      <ZoomEndTime time="94.002689 us"></ZoomEndTime>
+      <Cursor1Time time="89.322688 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="251"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="97" />
+   <wvobject type="group" fp_name="HLS_Process_Summary_group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="device_group">
+      <obj_property name="label">Device &quot;xilinx_u200_gen3x16_xdma_1_202110_1-0&quot;</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="group" fp_name="bin_group">
+         <obj_property name="label">Binary Container &quot;picorv_sca&quot;</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="group" fp_name="kernel_group">
+            <obj_property name="label">Kernel &quot;PicoRV32_SCA_kernel&quot; 1:1:1</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject type="group" fp_name="cu_group">
+               <obj_property name="label">Compute Unit: PicoRV32_SCA_kernel_1</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+               <obj_property name="Description_Data">Activity for compute unit PicoRV32_SCA_kernel_1</obj_property>
+               <obj_property name="EnumTransactionColorTable">1=blank</obj_property>
+               <obj_property name="EnumTransactionValueTable">1=blank;0=Running</obj_property>
+               <obj_property name="CustomSignalColor">#4DB34D</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Render_Data">/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/ap_idle</obj_property>
+               <wvobject type="group" fp_name="trans_group">
+                  <obj_property name="label">Data Transfers</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="isExpanded"></obj_property>
+                  <wvobject type="protoinst" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0">
+                     <obj_property name="ElementShortName">m_axi_bank_0</obj_property>
+                     <obj_property name="ObjectShortName">m_axi_bank_0</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="HLS_FIFO_group">
+      <obj_property name="label">HLS FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/ap_clk">
+      <obj_property name="ElementShortName">ap_clk</obj_property>
+      <obj_property name="ObjectShortName">ap_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/ap_rst_n">
+      <obj_property name="ElementShortName">ap_rst_n</obj_property>
+      <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_AWADDR">
+      <obj_property name="ElementShortName">m_axi_bank_0_AWADDR[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_AWADDR[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_AWLEN">
+      <obj_property name="ElementShortName">m_axi_bank_0_AWLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_AWLEN[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_AWSIZE">
+      <obj_property name="ElementShortName">m_axi_bank_0_AWSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_AWSIZE[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_AWVALID">
+      <obj_property name="ElementShortName">m_axi_bank_0_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_AWVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_AWREADY">
+      <obj_property name="ElementShortName">m_axi_bank_0_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_AWREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_WDATA">
+      <obj_property name="ElementShortName">m_axi_bank_0_WDATA[511:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_WDATA[511:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_WSTRB">
+      <obj_property name="ElementShortName">m_axi_bank_0_WSTRB[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_WSTRB[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_WVALID">
+      <obj_property name="ElementShortName">m_axi_bank_0_WVALID</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_WVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_WREADY">
+      <obj_property name="ElementShortName">m_axi_bank_0_WREADY</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_WREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_BRESP">
+      <obj_property name="ElementShortName">m_axi_bank_0_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_BVALID">
+      <obj_property name="ElementShortName">m_axi_bank_0_BVALID</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_BVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_BREADY">
+      <obj_property name="ElementShortName">m_axi_bank_0_BREADY</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_BREADY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_ARID">
+      <obj_property name="ElementShortName">m_axi_bank_0_ARID</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_ARID</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_ARADDR">
+      <obj_property name="ElementShortName">m_axi_bank_0_ARADDR[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_ARADDR[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_ARVALID">
+      <obj_property name="ElementShortName">m_axi_bank_0_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_ARVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_ARREADY">
+      <obj_property name="ElementShortName">m_axi_bank_0_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_ARREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_ARLEN">
+      <obj_property name="ElementShortName">m_axi_bank_0_ARLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_ARLEN[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_ARSIZE">
+      <obj_property name="ElementShortName">m_axi_bank_0_ARSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_ARSIZE[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_RDATA">
+      <obj_property name="ElementShortName">m_axi_bank_0_RDATA[511:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_RDATA[511:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_RVALID">
+      <obj_property name="ElementShortName">m_axi_bank_0_RVALID</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_RVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_RREADY">
+      <obj_property name="ElementShortName">m_axi_bank_0_RREADY</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_RREADY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/m_axi_bank_0_RID">
+      <obj_property name="ElementShortName">m_axi_bank_0_RID</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bank_0_RID</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_AWADDR">
+      <obj_property name="ElementShortName">s_axi_control_AWADDR[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_AWADDR[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_AWVALID">
+      <obj_property name="ElementShortName">s_axi_control_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_AWVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_AWREADY">
+      <obj_property name="ElementShortName">s_axi_control_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_AWREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_WDATA">
+      <obj_property name="ElementShortName">s_axi_control_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_WSTRB">
+      <obj_property name="ElementShortName">s_axi_control_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_WVALID">
+      <obj_property name="ElementShortName">s_axi_control_WVALID</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_WVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_WREADY">
+      <obj_property name="ElementShortName">s_axi_control_WREADY</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_WREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_BRESP">
+      <obj_property name="ElementShortName">s_axi_control_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_BVALID">
+      <obj_property name="ElementShortName">s_axi_control_BVALID</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_BVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_BREADY">
+      <obj_property name="ElementShortName">s_axi_control_BREADY</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_BREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_ARADDR">
+      <obj_property name="ElementShortName">s_axi_control_ARADDR[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_ARADDR[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_ARVALID">
+      <obj_property name="ElementShortName">s_axi_control_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_ARVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_ARREADY">
+      <obj_property name="ElementShortName">s_axi_control_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_ARREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_RDATA">
+      <obj_property name="ElementShortName">s_axi_control_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_RRESP">
+      <obj_property name="ElementShortName">s_axi_control_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_RRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_RVALID">
+      <obj_property name="ElementShortName">s_axi_control_RVALID</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_RVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/s_axi_control_RREADY">
+      <obj_property name="ElementShortName">s_axi_control_RREADY</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_RREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_AWADDR_s">
+      <obj_property name="ElementShortName">s_axi_control_AWADDR_s[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_AWADDR_s[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_AWVALID_s">
+      <obj_property name="ElementShortName">s_axi_control_AWVALID_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_AWVALID_s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_AWREADY_s">
+      <obj_property name="ElementShortName">s_axi_control_AWREADY_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_AWREADY_s</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_WDATA_s">
+      <obj_property name="ElementShortName">s_axi_control_WDATA_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_WDATA_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_WSTRB_s">
+      <obj_property name="ElementShortName">s_axi_control_WSTRB_s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_WSTRB_s[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_WVALID_s">
+      <obj_property name="ElementShortName">s_axi_control_WVALID_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_WVALID_s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_WREADY_s">
+      <obj_property name="ElementShortName">s_axi_control_WREADY_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_WREADY_s</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_BRESP_s">
+      <obj_property name="ElementShortName">s_axi_control_BRESP_s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_BRESP_s[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_BVALID_s">
+      <obj_property name="ElementShortName">s_axi_control_BVALID_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_BVALID_s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_BREADY_s">
+      <obj_property name="ElementShortName">s_axi_control_BREADY_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_BREADY_s</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_ARADDR_s">
+      <obj_property name="ElementShortName">s_axi_control_ARADDR_s[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_ARADDR_s[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_ARVALID_s">
+      <obj_property name="ElementShortName">s_axi_control_ARVALID_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_ARVALID_s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_ARREADY_s">
+      <obj_property name="ElementShortName">s_axi_control_ARREADY_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_ARREADY_s</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_RDATA_s">
+      <obj_property name="ElementShortName">s_axi_control_RDATA_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_RDATA_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_RRESP_s">
+      <obj_property name="ElementShortName">s_axi_control_RRESP_s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_RRESP_s[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_RVALID_s">
+      <obj_property name="ElementShortName">s_axi_control_RVALID_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_RVALID_s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/s_axi_control_RREADY_s">
+      <obj_property name="ElementShortName">s_axi_control_RREADY_s</obj_property>
+      <obj_property name="ObjectShortName">s_axi_control_RREADY_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider80" type="divider">
+      <obj_property name="label">FSM SIGNALS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiLiteFSM/cpu_en">
+      <obj_property name="ElementShortName">cpu_en</obj_property>
+      <obj_property name="ObjectShortName">cpu_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiLiteFSM/cpu_rstn">
+      <obj_property name="ElementShortName">cpu_rstn</obj_property>
+      <obj_property name="ObjectShortName">cpu_rstn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiLiteFSM/cpu_trap">
+      <obj_property name="ElementShortName">cpu_trap</obj_property>
+      <obj_property name="ObjectShortName">cpu_trap</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiLiteFSM/cpu_en_set">
+      <obj_property name="ElementShortName">cpu_en_set</obj_property>
+      <obj_property name="ObjectShortName">cpu_en_set</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiLiteFSM/cpu_en_rst">
+      <obj_property name="ElementShortName">cpu_en_rst</obj_property>
+      <obj_property name="ObjectShortName">cpu_en_rst</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiLiteFSM/wstate_next">
+      <obj_property name="ElementShortName">wstate_next</obj_property>
+      <obj_property name="ObjectShortName">wstate_next</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiLiteFSM/wstate">
+      <obj_property name="ElementShortName">wstate</obj_property>
+      <obj_property name="ObjectShortName">wstate</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiLiteFSM/rstate_next">
+      <obj_property name="ElementShortName">rstate_next</obj_property>
+      <obj_property name="ObjectShortName">rstate_next</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiLiteFSM/rstate">
+      <obj_property name="ElementShortName">rstate</obj_property>
+      <obj_property name="ObjectShortName">rstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider81" type="divider">
+      <obj_property name="label">CPU SIGNALS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/resetn">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/clk_en">
+      <obj_property name="ElementShortName">clk_en</obj_property>
+      <obj_property name="ObjectShortName">clk_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/inst_mem_clk">
+      <obj_property name="ElementShortName">inst_mem_clk</obj_property>
+      <obj_property name="ObjectShortName">inst_mem_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/inst_mem_en">
+      <obj_property name="ElementShortName">inst_mem_en</obj_property>
+      <obj_property name="ObjectShortName">inst_mem_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/inst_mem_wen">
+      <obj_property name="ElementShortName">inst_mem_wen[3:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_mem_wen[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/inst_mem_addr">
+      <obj_property name="ElementShortName">inst_mem_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_mem_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/inst_mem_data">
+      <obj_property name="ElementShortName">inst_mem_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_mem_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/inst_fetched">
+      <obj_property name="ElementShortName">inst_fetched[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_fetched[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/trap">
+      <obj_property name="ElementShortName">trap</obj_property>
+      <obj_property name="ObjectShortName">trap</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/mem_valid">
+      <obj_property name="ElementShortName">mem_valid</obj_property>
+      <obj_property name="ObjectShortName">mem_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/mem_instr">
+      <obj_property name="ElementShortName">mem_instr</obj_property>
+      <obj_property name="ObjectShortName">mem_instr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/mem_ready">
+      <obj_property name="ElementShortName">mem_ready</obj_property>
+      <obj_property name="ObjectShortName">mem_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/mem_addr">
+      <obj_property name="ElementShortName">mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/mem_wdata">
+      <obj_property name="ElementShortName">mem_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/mem_wstrb">
+      <obj_property name="ElementShortName">mem_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/CPU/mem_rdata">
+      <obj_property name="ElementShortName">mem_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider116" type="divider">
+      <obj_property name="label">AxiFuser</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiBRAMFlusher/douta">
+      <obj_property name="ElementShortName">douta[511:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[511:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiBRAMFlusher/addra">
+      <obj_property name="ElementShortName">addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/AxiBRAMFlusher/ena">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/trace_bram_rdata_array">
+      <obj_property name="ElementShortName">trace_bram_rdata_array[0:5][511:0]</obj_property>
+      <obj_property name="ObjectShortName">trace_bram_rdata_array[0:5][511:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/trace_bram_raddr_array">
+      <obj_property name="ElementShortName">trace_bram_raddr_array[0:5][11:0]</obj_property>
+      <obj_property name="ObjectShortName">trace_bram_raddr_array[0:5][11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/trace_bram_ren_array">
+      <obj_property name="ElementShortName">trace_bram_ren_array[0:5]</obj_property>
+      <obj_property name="ObjectShortName">trace_bram_ren_array[0:5]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pfm_top_wrapper/pfm_top_i/pfm_dynamic_inst/PicoRV32_SCA_kernel_1/U0/dump_bank_id">
+      <obj_property name="ElementShortName">dump_bank_id[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dump_bank_id[31:0]</obj_property>
+   </wvobject>
+</wave_config>
