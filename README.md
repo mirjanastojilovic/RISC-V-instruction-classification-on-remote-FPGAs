@@ -43,7 +43,7 @@ Overview:
 │      │
 │      └───regression_generators/: Directory containing python scripts that create bash scripts used to schedule all ML training on a runai cluster (kubernetes). If runai is not used, these scripts can still be used to generate the parameters for the ML training scripts (`launch_job_nfs.py`), since the command to launch the training script is embedded in the runai call.
 |
-└───process/: 
+└───process/:
 │   │
 │   └───process\_traces/: Directory containing the scripts that process raw traces to obtain traces used in the ML profiling, for both boards.
 │   │
@@ -68,7 +68,7 @@ Overview:
 ## Sakura-X experiments
 
 1. Generating templates
-    * Generate the templates for sakura X using the `template_generation/instructions/generate_templates.sh` script. Make sure to set the desired CPU to `riscy`, the desired number of templates per instruction to `10000`, and the desired type of templates to nops (for N templates) or random (for R templates).
+    * Generate the templates for Sakura X using the `template_generation/instructions/generate_templates.sh` script. Make sure to set the desired CPU to `riscy`, the desired number of templates per instruction to `10000`, and the desired type of templates to NOPs (for N templates) or random (for R templates).
     * Save the generated templates from the `out` folder to the desired directory.
 2. Build Vivado project and generate bitstream
     * Start Vivado 2018.3. When Vivado is started, a TCL command-line interface appears in the lower part of the GUI. Use this TCL command-line interface to change the directory:
@@ -89,7 +89,7 @@ Overview:
     * Change the variable `TEMPLATE_PATH[]` in `boards/sakura-x/sw/main.c` to point to the directory where the templates are stored.
     * Change the variable `DUMP_PATH[]` in `boards/sakura-x/sw/main.c` to point to the directory where the test traces will be saved.
     * Compile the Sakura-X interface software found in `boards/sakura-x/sw/`
-    * Program control FPGA with the bistream in `boards/sakura-x/hw/bitstreams/ctrl/sasebo_giii_ctrl_24MHz.bit`
+    * Program control FPGA with the bitstream in `boards/sakura-x/hw/bitstreams/ctrl/sasebo_giii_ctrl_24MHz.bit`
     * Program main FPGA with the bitstream generated in step 2.
     * Run the `unload_sio.sh` and `setupFTD.sh` scripts in the `boards/sakura-x/sw/Debug` folder
     * Run the compiled Sakura-X interface software found in `boards/sakura-x/sw/Debug` by running `./FTDexampleAES -t 100 -s 500 1000 -c 1 -i data/ -d data/`
@@ -98,11 +98,11 @@ Overview:
     * Recompile the software
     * Reprogram the main FPGA with the bitstream generated in step 2.
 4. Recording opcode positioner traces
-    * Run the `regression_quick.sh` and collect traces with no averaging (for opcode extraciton)
+    * Run the `regression_quick.sh` and collect traces with no averaging (for opcode extraction)
 5. Extracting start and end locations
     * When step 4 is done, run the `process_opcodes_sakura.py` in `template_generation/instructions` folder (make sure to change the according paths in the scripts to point to the templates folder and the newly collected traces folder), and run the script to generate the start and end times for the metadata file.
 6. Recording Exp-IN-N, Exp-OUT1-N, Exp-OUT1-R, and Exp-OUT2-N datasets
-    * Program the main Sakura-X FPGA with the according bistream
+    * Program the main Sakura-X FPGA with the according bitstream
     * Make sure to use the correct calibration for each sensor, by setting it in `boards/sakura-x/sw/main.c` file (matrix `idc_idf[5][16]`), according to the values from step 2 for that bitstream
     * Change the variable `TEMPLATE_PATH[]` in `boards/sakura-x/sw/main.c` to point to the directory where the templates are stored.
     * Change the variable `DUMP_PATH[]` in `boards/sakura-x/sw/main.c` to point to the directory where the test traces will be saved.
@@ -124,16 +124,16 @@ Overview:
     * Once all the results are collected in step 8, run the `create_unpack_regression_sakura.py` (make sure to change the according paths) script from `process/process_results/unpack_results`
     * Run the generated bash script to unpack all the results
 10. Collecting the results
-    * Run all the python notebooks (except the `*alveo.ipynb`) from `process/process_results/collect_results` to collect all the resuts (make sure to change the according paths)
+    * Run all the python notebooks (except the `*alveo.ipynb`) from `process/process_results/collect_results` to collect all the results (make sure to change the according paths)
 11. Plotting the results
     * Run all the python notebooks from `plot` to plot the figures in the paper
 
 ## Alveo experiments
 
 1. Generating templates (instructions and snippets)
-    * Generate the templates for Alveo using the `template_generation/instructions/generate_templates.sh` script. Make sure to set the desired CPU to `picorv32`, the desired number of templates per instruction to `10000` or `20000`, and the desired type of templates to nops (for N templates) or random (for R templates).
+    * Generate the templates for Alveo using the `template_generation/instructions/generate_templates.sh` script. Make sure to set the desired CPU to `picorv32`, the desired number of templates per instruction to `10000` or `20000`, and the desired type of templates to NOPs (for N templates) or random (for R templates).
     * Save the generated templates from the `alveo_out` folder to the desired directory.
-2. Generate the bistream
+2. Generate the bitstream
     * Vitis/Vivado 2022.1, XRT library 2.13.466
     * In `boards/alveo/picorv/alveo//tcl`, run `make_impl`
     * Bitstream will be generated in `boards/alveo/picorv/alveo/bin`
@@ -172,4 +172,4 @@ Overview:
     * Once all the results are collected in step 8, run the `create_unpack_regression_alveo.py` (make sure to change the according paths) script from `process/process_results/unpack_results`
     * Run the generated bash script to unpack all the results
 10. Collecting the results
-    * Run the `collect_accuracies_alveo.ipynb` python notebook from `process/process_results/collect_results` to collect all the resuts (make sure to change the according paths)
+    * Run the `collect_accuracies_alveo.ipynb` python notebook from `process/process_results/collect_results` to collect all the results (make sure to change the according paths)
