@@ -11,27 +11,37 @@ Overview:
 │
 └───boards/
 │   │
-│   └───alveo/: 
+│   └───alveo/picorv/: 
 │   │   │
-│   │   └───bitstreams/: Directory containing the bitstreams used for the experiments on the Alveo U200 Datacenter Card.
+│   │   └───picorv32/: Directory containing the source files of the PicoRV32 CPU.
 │   │   │
-│   │   └───constraints/: Directory containing the constraints for RDS and TDC sensors.
-│   │   │
-│   │   └───rtl/: Directory containing the hardware files needed to create the project of the Alveo U200 Datacenter Card.
-│   │   │
-│   │   └───soft/: Directory containing all the software files need to collect the power traces on the Alveo U200 Datacenter Card.
-│   │   │
-│   │   └───tcl/: Directory containing the files that automatically create the project in Vivado by using the files from hw/.
+│   │   └───alveo/: Directory containing the bitstreams used for the experiments on the Alveo U200 Datacenter Card.
+│   │      │
+│   │      └───bitstreams/: Directory containing the bitstreams used for the experiments on the Alveo U200 Datacenter Card.
+│   │      │
+│   │      └───constraints/: Directory containing the constraints for RDS and TDC sensors.
+│   │      │
+│   │      └───rtl/: Directory containing the hardware files needed to create the project of the Alveo U200 Datacenter Card.
+│   │      │
+│   │      └───soft/: Directory containing all the software files need to collect the power traces on the Alveo U200 Datacenter Card.
+│   │      │
+│   │      └───tcl/: Directory containing the files that automatically create the project in Vivado by using the files from hw/.
 │   │
 │   └───sakura-x/: 
 │      │
-│      └───bitstreams/: Directory containing all the bitstreams used on the Sakura-X board. The placement strategy is specified in the bitstream name.
-│      │
 │      └───hw/: Directory containing all the hardware files needed to create the project on the Sakura-X board.
-│      │    │
-│      │    └───tcl/: Directory containing the TCL scripts to automatically set up a project in Vivado.
+│      │   │
+│      │   └───bitstreams/: Directory containing all the bitstreams used on the Sakura-X board. The placement strategy is specified in the bitstream name.
+│      │   │
+│      │   └───constraints/: Directory containing the constraints for the three placements of the CPU and sensors.
+│      │   │
+│      │   └───sources/: Directory containing all the hardware sources for the system.
+│      │   │
+│      │   └───tcl/: Directory containing the TCL scripts to automatically set up a project in Vivado.
 │      │
 │      └───sw/: Directory containing the software files needed to collect the power traces on the Sakura-X board.
+│      │
+│      └───process/: Directory containing the software files needed to process the collected traces.
 │
 └───ml_attack/
 │   │
