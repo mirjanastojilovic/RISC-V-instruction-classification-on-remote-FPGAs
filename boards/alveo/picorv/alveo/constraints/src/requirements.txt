@@ -73,4 +73,4 @@ traitlets==5.1.1
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.6.0
-zipp==3.8.0
+zipp==3.19.1
